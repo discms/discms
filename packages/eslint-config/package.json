@@ -1,0 +1,111 @@
+{
+  "name": "@discms/eslint-config",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Nicholas Berlette",
+    "email": "nick@berlette.com",
+    "url": "https://berlette.com"
+  },
+  "bugs": "https://github.com/discms/discms/issues/new?title=%5Bpackages/eslint-config%5D%3A%20",
+  "readme": "https://github.com/discms/discms/tree/main/packages/eslint-config#readme",
+  "homepage": "https://github.com/discms/discms",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/discms/discms",
+    "directory": "packages/eslint-config"
+  },
+  "packageManager": "pnpm@6.32.9",
+  "publishConfig": {
+    "access": "public"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "next/core-web-vitals",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "rules": {
+      "@next/next/no-img-element": "off"
+    },
+    "globals": {
+      "React": "writable"
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.ts",
+          "*.tsx"
+        ],
+        "extends": [
+          "plugin:@typescript-eslint/recommended"
+        ],
+        "rules": {
+          "@typescript-eslint/explicit-module-boundary-types": "off",
+          "@typescript-eslint/no-explicit-any": "off"
+        }
+      }
+    ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "ignorePatterns": [
+      "public/client.js",
+      "public/js/iframeResizer.contentWindow.min.js",
+      "public/js/iframeResizer.min.js",
+      ".next",
+      "node_modules",
+      "*.md",
+      ".github"
+    ]
+  },
+  "prettier": "@discms/prettier-config",
+  "private": false,
+  "description": "Shared eslint config for packages in the discms project.",
+  "keywords": [
+    "eslint",
+    "config",
+    "discms",
+    "eslintrc"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.js",
+      "import": "./index.mjs"
+    },
+    "./index.d.ts": "./index.d.ts",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "dependencies": {
+    "@discms/prettier-config": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "eslint-config-next": "^12.1.5",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "7.28.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "next": "^12.1.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "typescript": "^4.6.3"
+  }
+}

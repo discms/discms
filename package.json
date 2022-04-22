@@ -1,0 +1,51 @@
+{
+  "name": "discms",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Nicholas Berlette",
+    "email": "nick@berlette.com",
+    "url": "https://berlette.com"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "pnpm@6.32.9",
+  "private": true,
+  "engines": {
+    "pnpm": ">=6.30.0",
+    "node": ">=16.9.0"
+  },
+  "bugs": "https://github.com/discms/discms/issues/new",
+  "readme": "https://github.com/discms/discms#readme",
+  "homepage": "https://github.com/discms/discms",
+  "repository": "discms/discms",
+  "eslintConfig": {
+    "extends": "@discms"
+  },
+  "prettier": "@discms/prettier-config",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format:base": "prettier ./src/**/*.{ts,tsx,css,json}",
+    "format:check": "pnpm format:base --check",
+    "format": "pnpm format:base --write",
+    "release": "changeset version",
+    "postrelease": "changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.22.0",
+    "@discms/eslint-config": "workspace:*",
+    "@discms/prettier-config": "workspace:*",
+    "next": "^12.1.5",
+    "prettier": "^2.6.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "turbo": "latest",
+    "typescript": "^4.6.3"
+  }
+}

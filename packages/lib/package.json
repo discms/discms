@@ -1,0 +1,52 @@
+{
+  "name": "lib",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./index.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.ts"
+    },
+    "./types": "./types/index.ts",
+    "./types/*": "./types/*",
+    "./locales/*": "./locales/*",
+    "./oauth/*": "./oauth/*",
+    "./package.json": "./package.json",
+    "./adapter": "./adapter.ts",
+    "./config": "./config.ts",
+    "./context": "./context.ts",
+    "./cors": "./cors.ts",
+    "./fetcher": "./fetcher.ts",
+    "./hooks": "./hooks.ts",
+    "./i18n.json": "./i18n.json",
+    "./jwt": "./jwt.ts",
+    "./messages": "./messages.ts",
+    "./reactions": "./reactions.ts",
+    "./utils": "./utils.ts",
+    "./variables": "./variables.ts"
+  },
+  "files": [
+    "types",
+    "services",
+    "oauth",
+    "locales",
+    "*.ts",
+    "*.json"
+  ],
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "preact": "^10.7.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "swr": "^1.3.0"
+  },
+  "devDependencies": {
+    "@discms/eslint-config": "workspace:*",
+    "@discms/prettier-config": "workspace:*",
+    "@types/react": "^18.0.6",
+    "@types/react-dom": "^18.0.2",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.6.3"
+  }
+}

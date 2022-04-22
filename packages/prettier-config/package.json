@@ -1,0 +1,55 @@
+{
+  "name": "@discms/prettier-config",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Nicholas Berlette",
+    "email": "nick@berlette.com",
+    "url": "https://berlette.com"
+  },
+  "packageManager": "pnpm@6.32.9",
+  "prettier": {
+    "printWidth": 100,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "useTabs": false,
+    "tabWidth": 2,
+    "quoteProps": "consistent",
+    "arrowParens": "avoid"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Shared prettier config for packages in the discms project.",
+  "bugs": "https://github.com/discms/discms/issues/new?title=%5Bpackages/prettier-config%5D%3A%20",
+  "readme": "https://github.com/discms/discms/tree/main/packages/prettier-config#readme",
+  "homepage": "https://github.com/discms/discms",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/discms/discms",
+    "directory": "packages/prettier-config"
+  },
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.js",
+      "import": "./index.mjs"
+    },
+    "./index.d.ts": "./index.d.ts",
+    "./package.json": "./package.json"
+  },
+  "keywords": [
+    "prettier",
+    "config",
+    "discms",
+    "prettierrc"
+  ]
+}

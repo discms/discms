@@ -1,0 +1,28 @@
+{
+  "name": "ui",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "dependencies": {
+    "lib": "workspace:*",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@discms/eslint-config": "workspace:*",
+    "@discms/prettier-config": "workspace:*",
+    "@primer/octicons-react": "^17.0.0",
+    "@primer/react": "^35.2.0",
+    "@types/react": "^18.0.6",
+    "@types/react-dom": "^18.0.2",
+    "autoprefixer": "^10.4.4",
+    "next-translate": "^1.4.0",
+    "postcss": "^8.4.12",
+    "postcss-import": "^14.1.0",
+    "react-is": ">=16.8.0",
+    "tailwindcss": "^3.0.24",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.6.3"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "@discms/client",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Nicholas Berlette",
+    "email": "nick@berlette.com",
+    "url": "https://berlette.com"
+  },
+  "bugs": "https://github.com/discms/discms/issues/new?title=%5Bpackages/client%5D%3A%20",
+  "readme": "https://github.com/discms/discms/tree/main/packages/client#readme",
+  "homepage": "https://github.com/discms/discms",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/discms/discms",
+    "directory": "packages/client"
+  },
+  "packageManager": "pnpm@6.32.9",
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
+  "tsup": {
+    "entryPoints": ["index.ts"],
+    "outDir": "dist",
+    "format": ["iife"],
+    "target": "ES5",
+    "dts": true,
+    "minify": true
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "lint": "eslint --cache .",
+    "lint:fix": "eslint --fix index.ts",
+    "clean": "rm -rf node_modules .turbo .next"
+  },
+  "eslintConfig": {
+    "extends": "@discms"
+  },
+  "prettier": "@discms/prettier-config",
+  "devDependencies": {
+    "@discms/eslint-config": "workspace:*",
+    "@discms/prettier-config": "workspace:*",
+    "@types/node": "^17.0.25",
+    "tsconfig": "workspace:*",
+    "tsup": "^5.12.6",
+    "typescript": "^4.6.3"
+  },
+  "browserslist": [
+    ">0.3%",
+    "not ie 11",
+    "not dead",
+    "not op_mini all"
+  ]
+}

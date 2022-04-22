@@ -1,0 +1,15 @@
+{
+  "extends": "tsconfig/react.json",
+  "include": ["**/*.ts", "**/*.tsx", "**/*.d.ts", "**/*.css", "**/*.scss"],
+  "exclude": ["dist", "build", "node_modules"],
+  "compilerOptions": {
+    "strict": false,
+    "strictFunctionTypes": false,
+    "strictNullChecks": false,
+    "allowSyntheticDefaultImports": true,
+    "allowUnusedLabels": true,
+    "noImplicitReturns": false,
+    "suppressExcessPropertyErrors": true,
+    "suppressImplicitAnyIndexErrors": true
+  }
+}
