@@ -1,77 +1,24 @@
-# Turborepo starter with pnpm
+# discms/discms monorepo
 
-This is an official starter turborepo.
+This is a [monolithic repository](https://monorepo.tools) (or _"monorepo"_) containing multiple related codebases under one roof. 
 
-## What's inside?
+## Tech Stack
 
-This turborepo uses [pnpm](https://pnpm.io) as a packages manager. It includes the following packages/apps:
+- It's organized with [**pnpm**](https://pnpm.io) for dependency management
+- Task management with [**turborepo**](https://turborepo.org) for task management. 
+- Written in _mostly_ [**TypeScript**](https://typescriptlang.org), a statically typed superset of JavaScript
+- Tests are run with [**vitest**](https://vitest.dev), which itself runs on [**vite**](https://vitejs.dev) (it's really fast). 
+- Linting is run with [**eslint**](https://eslint.org) with a [**custom set of shared configurations**](./packages/eslint-config).
+- Authentication tokens are managed with a [**Supabase**](https://supabase.com) instance.
+- [**UI/UX**](./#i-need-to-make-this) and [**docs**](./#i-need-to-make-this-too) run on [**Nuxt3**](https://nuxtjs.org) and [**@nuxt/content**](https://content.nuxtjs.org), respectively.
+- [**Gitpod**](https://gitpod.io) and [**Codespaces**](https://docs.github.com/en/codespaces) used for ephemeral development workspaces
+- Shorthand versions of `npm run '...'` thanks to [**@brlt/n**](https://github.com/nberlette/n)
+- TypeScript helpers and utility functions from [**@brlt/utils**](https://github.com/nberlette/utils)
 
-### Apps and Packages
+## Prior Art
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+**Heavily** inspired by the [**giscus project**](https://github.com/giscus/giscus). Thank you Sage!
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## License
 
-### Utilities
-
-This turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-## Setup
-
-This repository is used in the `npx create-turbo@latest` command, and selected when choosing which package manager you wish to use with your monorepo (PNPM).
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm run build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm run dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching (Beta)](https://turborepo.org/docs/features/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching (Beta) you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-pnpx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
-
-```
-pnpx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Pipelines](https://turborepo.org/docs/features/pipelines)
-- [Caching](https://turborepo.org/docs/features/caching)
-- [Remote Caching (Beta)](https://turborepo.org/docs/features/remote-caching)
-- [Scoped Tasks](https://turborepo.org/docs/features/scopes)
-- [Configuration Options](https://turborepo.org/docs/reference/configuration)
-- [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+MIT © [Nicholas Berlette](https://github.com/nberlette) 
