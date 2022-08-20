@@ -42,7 +42,7 @@
   "devDependencies": {
     "@discms/eslint-config": "workspace:*",
     "@discms/prettier-config": "workspace:*",
-    "@types/node": "^17.0.25",
+    "@types/node": "^18.7.8",
     "tsconfig": "workspace:*",
     "tsup": "^6.0.1",
     "typescript": "^4.6.3"
