@@ -22,7 +22,7 @@
     "ui": "workspace:*"
   },
   "devDependencies": {
-    "@babel/core": "7.18.2",
+    "@babel/core": "7.19.0",
     "@discms/prettier-config": "workspace:*",
     "@discms/eslint-config": "workspace:*",
     "@next/bundle-analyzer": "^12.1.5",
