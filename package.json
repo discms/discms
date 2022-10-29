@@ -41,7 +41,7 @@
     "@changesets/cli": "^2.22.0",
     "@discms/eslint-config": "workspace:*",
     "@discms/prettier-config": "workspace:*",
-    "next": "^12.1.5",
+    "next": "^13.0.0",
     "prettier": "^2.6.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
