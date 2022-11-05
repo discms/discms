@@ -31,7 +31,7 @@
     "@types/react": "^18.0.6",
     "eslint": "^8.13.0",
     "next-translate": "^1.4.0",
-    "next-transpile-modules": "9.0.0",
+    "next-transpile-modules": "10.0.0",
     "tsconfig": "workspace:*",
     "typescript": "^4.6.3"
   }
