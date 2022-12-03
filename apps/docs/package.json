@@ -14,7 +14,7 @@
   },
   "prettier": "@discms/prettier-config",
   "dependencies": {
-    "next": "^12.1.5",
+    "next": "^13.0.6",
     "lib": "workspace:*",
     "preact": "^10.7.1",
     "react": "^18.0.0",
