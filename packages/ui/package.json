@@ -12,7 +12,7 @@
   "devDependencies": {
     "@discms/eslint-config": "workspace:*",
     "@discms/prettier-config": "workspace:*",
-    "@primer/octicons-react": "^17.0.0",
+    "@primer/octicons-react": "^18.0.0",
     "@primer/react": "^35.2.0",
     "@types/react": "^18.0.6",
     "@types/react-dom": "^18.0.2",
