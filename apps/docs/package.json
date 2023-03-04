@@ -25,7 +25,7 @@
     "@babel/core": "7.18.2",
     "@discms/prettier-config": "workspace:*",
     "@discms/eslint-config": "workspace:*",
-    "@next/bundle-analyzer": "^12.1.5",
+    "@next/bundle-analyzer": "^13.2.3",
     "@prefresh/next": "^1.5.2",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.6",
